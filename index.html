@@ -7,15 +7,18 @@
           <script></script>
       </head>
       <style>
-          body{
-              background-color: gray;
-              color:white
-          }  
+          .body{
+            background-color: black;
+            color:red;
+          }
           .texto{
-              color:white
-          } 
-      </style>  
-      <body>
+            color:purple;
+          }
+          .submit{
+            background-color: green;
+          }
+      </style>
+      <body class="body">
           Bom dia, esse é o primeiro codigo de html
         <form method="POST" action="index.php">
             <fieldset>
@@ -23,10 +26,11 @@
                   Primeiro Formulario
                 </legend>
                 <br>
-                <p class="usuario"> >Usuario:</p> <input type="text" placeholder="Usuario" minlength="5" maxlength="10" required><br>
-                <p class="senha"> >Senha:</p>   <input type="password" placeholder="Senha" minlength="5" maxlength="10" required><br>
-                <input type="submit" value="Registrar">
+                <p class="texto">Usuario:</p> <input type="text" placeholder="Usuario" minlength="5" maxlength="10" required><br>
+                <p class="texto">Senha:</p>   <input type="password" placeholder="Senha" minlength="5" maxlength="10" required><br>
+                <input type="submit" value="Registrar" class="submit">
             </fieldset>
         </form>
+        <img src="https://avatars.githubusercontent.com/u/104093822?v=4" width="" height="">
       </body>
   </html>
