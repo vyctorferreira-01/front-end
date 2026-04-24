@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,14 +42,13 @@
             document.getElementById("campo").value = "";
         }
         function calcular(){
-            var campo = document.getElementByid("campo")
+            var campo = document.getElementById("campo");
             try{
-                campo.value = eval(campo.value);
+               campo.value = eval(campo.value);
             }catch(error){
-                campo.value ="error";
-                
+                campo.value ="Erro";
             }
-        }        
+        }
     </script>
 </head>
 <body>
@@ -75,9 +73,9 @@
         <button onclick="adicionar('+')" class="botao2">+</button>
         <button onclick="adicionar(')')" class="botao2">)</button>
         <br>
-        <button onclick="adicionar('.')" class="botao2">*</button>
+        <button onclick="adicionar('.')" class="botao2">.</button>
         <button onclick="adicionar('0')" class="botao">0</button>
-        <button onclick="adicionar(',')" class="botao2">#</button>
+        <button onclick="adicionar(',')" class="botao2">,</button>
         <button onclick="adicionar('-')" class="botao2">-</button>
         <button onclick="adicionar('%')" class="botao2">%</button>
         <br>
@@ -86,4 +84,3 @@
     </fieldset>
 </body>
 </html>
-
