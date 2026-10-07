@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .site{
+        width:1200px;
+        height:600px;
+        background-color: rgb(234, 187, 129);
+      }
+      .linha1{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha2{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha3{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha4{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha5{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha6{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha7{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha8{
+        flex-direction:row;
+        display:flex;
+      }
+      .linha9{
+        flex-direction:row;
+        display:flex;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <fieldset>
+          <legend>DADOS PESSOAIS</legend>
+        <div class="linha1">
+            <label>Nome Completo:<input type="text"></label>
+            <label>Sexo:
+            <select>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>Outros</option>
+            </select>
+            </label>
+        </div>
+        <div class="linha2">
+            <label>Data de Nascimento:<input type="date"></label>
+            <label>CPF:<input type="text"></label>
+            <label>RG:<input type="text"></label>
+            <label>Nacionalidade:<input type="text"></label>
+        </div>
+        <div class="linha3">
+          <label>Email:<input type="email"></label>
+          <label>Telefone Celular:<input type="number"></label>
+          <label>Telefone Residencial:<input type="number"></label>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend>DADOS DE ENDEREÇO</legend>
+        <div class="linha4">
+          <label>CEP:<input type="number"></label>
+          <label>Logradouro:<input type="text"></label>
+          <label>Numero:<input type="number"></label>
+          <label>Complemento:<input type="text"></label>
+        </div>
+        <div class="linha5">
+          <label>Bairro:<input type="text"></label>
+          <label>Cidade:<input type="text"></label>
+          <label>Estado:<select>
+            <option>SP</option>
+          </select>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend>DADOS ACADEMICOS</legend>
+        <div class="linha6">
+          <label>Curso:<input type="text"></label>
+          <label>Matricula (RA):<input type="number"></label>
+          <label>Ano/Semestre Ingresso:<input type="text"></label>
+        </div>
+        <div class="linha7">
+          <label>Modalidade:<select>
+            <option>Presencial</option>
+          </select></label>
+          <label>Turno<select>
+            <option>Manha</option>
+          </select></label>
+          <label>Escolaridade Anterior<input type="text"></label>
+        </div>
+        </fieldset>
+        <fieldset>
+          <legend>DADOS DO RESPONSAVEL</legend>
+        <div class="linha8">
+          <label>Nome do Responsavel:<input type="text"></label>
+          <label>CPF do responsavel<input type="text"></label>
+        </div>
+        <div class="linha9">
+          <label>Observaçoes:<textarea></textarea></label>
+        </div>
+        </fieldset>
+    </div>
+</body>
+</html>
