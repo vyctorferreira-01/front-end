@@ -1,113 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      .site{
-        width:600px;
-        height:600px;
-        background-color: rgb(234, 187, 129);
-      }
-      .linha1{
-        flex-direction:row;
-      }
-      .linha2{
-        flex-direction:row;
-      }
-      .linha3{
-        flex-direction:row;
-      }
-      .linha4{
-        flex-direction:row;
-      }
-      .linha5{
-        flex-direction:row;
-      }
-      .linha6{
-        flex-direction:row;
-      }
-      .linha7{
-        flex-direction:row;
-      }
-      .linha8{
-        flex-direction:row;
-      }
-      .linha9{
-        flex-direction:row;
-      }
-    </style>
-</head>
-<body>
-    <div class="site">
-        <fieldset>
-          <legend>DADOS PESSOAIS</legend>
-        <div class="linha1">
-          <label>Nome Completo:<input type="text"></label>
-          <label>Sexo:
-            <select>
-                <option>Masculino</option>
-                <option>Feminino</option>
-                <option>Outros</option>
-            </select>
-            </label>
-        </div>
-        <div class="linha2">
-          <label>Data de Nascimento:<input type="date"></label>
-          <label>CPF:<input type="text"></label>
-          <label>RG:<input type="text"></label>
-          <label>Nacionalidade:<input type="text"></label>
-        </div>
-        <div class="linha3">
-          <label>Email:<input type="email"></label>
-          <label>Telefone Celular:<input type="number"></label>
-          <label>Telefone Residencial:<input type="number"></label>
-        </div>
-        </fieldset>
-        <fieldset>
-          <legend>DADOS DE ENDEREÇO</legend>
-        <div class="linha4">
-          <label>CEP:<input type="number"></label>
-          <label>Logradouro:<input type="text"></label>
-          <label>Numero:<input type="number"></label>
-          <label>Complemento:<input type="text"></label>
-        </div>
-        <div class="linha5">
-          <label>Bairro:<input type="text"></label>
-          <label>Cidade:<input type="text"></label>
-          <label>Estado:<select>
-              <option>SP</option>
-            </select></label>
-        </div>
-        </fieldset>
-        <fieldset>
-          <legend>DADOS ACADEMICOS</legend>
-        <div class="linha6">
-          <label>Curso:<input type="text"></label>
-          <label>Matricula (RA):<input type="number"></label>
-          <label>Ano/Semestre Ingresso:<input type="text"></label>
-        </div>
-        <div class="linha7">
-          <label>Modalidade:<select>
-              <option>Presencial</option>
-            </select></label>
-          <label>Turno<select>
-              <option>Manha</option>
-            </select></label>
-          <label>Escolaridade Anterior<input type="text"></label>
-        </div>
-        </fieldset>
-        <fieldset>
-          <legend>DADOS DO RESPONSAVEL</legend>
-        <div class="linha8">
-          <label>Nome do Responsavel:<input type="text"></label>
-          <label>CPF do responsavel<input type="text"></label>
-        </div>
-        <div class="linha9">
-          <label>Observaçoes:<textarea></textarea></label>
-        </div>
-        </fieldset>
-    </div>
-</body>
-</html>
+import React from "react";
+import {StyleSheet, View, Text, TextInput, ScrollView} from "react-native"
+ 
+export default function Index(){
+  return <>
+      <ScrollView>
+      <View style={estilo.tela}>
+ 
+          <View style={estilo.linha}>
+              <Text style={estilo.titulo}>DADOS PESSOAIS</Text>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha11}>
+                  <Text style={estilo.texto}>Nome Completo:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha12}>
+                  <Text style={estilo.texto}>Sexo:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha21}>
+                  <Text style={estilo.texto}>Data de Nascimento:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha22}>
+                  <Text style={estilo.texto}>CPF:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha23}>
+                  <Text style={estilo.texto}>RG:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha24}>
+                  <Text style={estilo.texto}>Nacionalidade:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha31}>
+                  <Text style={estilo.texto}>Email:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha32}>
+                  <Text style={estilo.texto}>Telefone Celular:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha33}>
+                  <Text style={estilo.texto}>Telefone Residencial:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+ 
+ 
+          <View style={estilo.linha}>
+              <Text style={estilo.titulo}>DADOS DE ENDERECO</Text>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha41}>
+                  <Text style={estilo.texto}>CEP:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha42}>
+                  <Text style={estilo.texto}>Logradouro:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha43}>
+                  <Text style={estilo.texto}>Numero:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha51}>
+                  <Text style={estilo.texto}>Bairro:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha52}>
+                  <Text style={estilo.texto}>Cidade:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha53}>
+                  <Text style={estilo.texto}>Estado:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+ 
+ 
+          <View style={estilo.linha}>
+              <Text style={estilo.titulo}>DADOS ACADEMICOS</Text>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha61}>
+                  <Text style={estilo.texto}>Curso:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha62}>
+                  <Text style={estilo.texto}>Matricula (RA):</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha63}>
+                  <Text style={estilo.texto}>Ano/Semestre:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha71}>
+                  <Text style={estilo.texto}>Modalidade:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha72}>
+                  <Text style={estilo.texto}>Turno:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha73}>
+                  <Text style={estilo.texto}>Escolaridade Prior:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+ 
+ 
+          <View style={estilo.linha}>
+              <Text style={estilo.titulo}>DADOS DO RESPONSAVEL</Text>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha81}>
+                  <Text style={estilo.texto}>Nome da Responsavel:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+              <View style={estilo.linha82}>
+                  <Text style={estilo.texto}>CPF do Responsavel:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+          <View style={estilo.linha}>
+              <View style={estilo.linha91}>
+                  <Text style={estilo.texto}>Observacoes:</Text>
+                  <TextInput style={estilo.input}/>
+              </View>
+          </View>
+ 
+      </View>
+      </ScrollView>
+  </>
+}
+ 
+const estilo = StyleSheet.create({
+  tela:{
+    width:"100%",
+    backgroundColor:"white",
+  },
+  linha:{
+    width:"100%",
+    backgroundColor:"white",
+    flexDirection:"row",
+    display:"flex",
+    marginTop:"2%",
+  },
+  titulo:{
+    color:"black",
+    fontWeight:"bold",
+    fontSize:16,
+  },
+  linha11:{
+    width:"70%",
+    backgroundColor:"black",
+  },
+  linha12:{
+    width:"28%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha21:{
+    width:"23.5%",
+    backgroundColor:"black",
+  },
+  linha22:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha23:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha24:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha31:{
+    width:"49%",
+    backgroundColor:"black",
+  },
+  linha32:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha33:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha41:{
+    width:"23.5%",
+    backgroundColor:"black",
+  },
+  linha42:{
+    width:"49%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha43:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha51:{
+    width:"49%",
+    backgroundColor:"black",
+  },
+  linha52:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha53:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha61:{
+    width:"49%",
+    backgroundColor:"black",
+  },
+  linha62:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha63:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha71:{
+    width:"23.5%",
+    backgroundColor:"black",
+  },
+  linha72:{
+    width:"23.5%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha73:{
+    width:"49%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha81:{
+    width:"70%",
+    backgroundColor:"black",
+  },
+  linha82:{
+    width:"28%",
+    backgroundColor:"black",
+    marginLeft:"2%",
+  },
+  linha91:{
+    width:"100%",
+    backgroundColor:"black",
+  },
+  texto:{
+    color:"white",
+    fontFamily:"arial",
+    fontWeight:"bold",
+    fontSize:10,
+  },
+  input:{
+    border:"1px solid cyan",
+    width:"100%",
+    marginTop:"5%",
+    color:"blue",
+  }
+})
+ 
